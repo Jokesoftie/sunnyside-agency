@@ -1,0 +1,206 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../../../Downloads/Oleo_Script\,Poppins\,Raleway\,Roboto_Condensed.zip");
+}
+:root {
+  --Soft: hsl(7, 99%, 70%);
+  --Yellow: hsl(51, 100%, 49%);
+  --Dark--desaturatedcyan: hsl(167, 40%, 24%);
+  --Dark--blue: hsl(198, 62%, 26%);
+  --Dark--moderatecyan: hsl(168, 34%, 41%);
+  --Very--darkdesaturatedblue: hsl(212, 27%, 19%);
+  --Very--darkgrayishblue: hsl(213, 9%, 39%);
+  --Dark--grayishblue: hsl(232, 10%, 55%);
+  --Grayish--blue: hsl(210, 4%, 67%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: "Poppins";
+  color: rgb(0, 60, 255);
+}
+.hero-section {
+  background-image: url(images/desktop/image-header.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+#nav-bar {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+.hero-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: calc(100vh - 78px);
+}
+.hero-description h1 {
+  color: var(--White);
+  font-size: 5rem;
+  margin: 5rem 0;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+.arrow-image-container {
+  width: 50px;
+  margin-top: 2rem;
+}
+.transform {
+  display: flex;
+}
+.transform-text,
+.transform-image,
+.stand-out-text,
+.stand-out-image {
+  width: 50%;
+}
+.transform-image,
+.stand-out-image {
+  height: 500px;
+  overflow: hidden;
+}
+.transform-image img,
+.stand-out-image img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+.transform-text,
+.stand-out-text {
+  padding: 7rem 10rem;
+  
+}
+.transform-text h2,
+.stand-out-text h2 {
+  font-size: 2.5rem;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+}
+.transform-text p,
+.stand-out-text p {
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+span {
+  color: black;
+  text-transform: uppercase;
+}
+.stand-out {
+  display: flex;
+}
+.design {
+  display: flex;
+}
+
+.graphic {
+  background-image: url(images/desktop/image-graphic-design.jpg);
+}
+.photography {
+  background-image: url(images/desktop/image-photography.jpg);
+}
+.graphic,
+.photography {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 550px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 3rem;
+}
+.graphic div,
+.photography div {
+  width: 60%;
+  text-align: center;
+}
+.graphic div h2,
+.photography div h2 {
+  margin-bottom: 2rem;
+}
+
+.testimonials {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+.testimonials p {
+  color: var(--Very--darkgrayishblue);
+  margin-bottom: 3rem;
+}
+.testimonials h4 {
+  color: var(--Grayish--blue);
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+}
+.testimonials h5 {
+  margin-bottom: 10px;
+}
+.testimonials span {
+  color: var(--Grayish--blue);
+  text-transform: capitalize;
+}
+.clients {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profile-image {
+  border-radius: 50px;
+  margin-bottom: 1rem;
+}
+.first-client {
+  padding: 2rem;
+}
+.gallery {
+  display: flex;
+  /* height: 500px; */
+  overflow: hidden;
+}
+.gallery-image-container {
+  width: 100%;
+}
+.gallery img {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  background-color: var(--Dark--moderatecyan);
+  /* border: 2px solid; */
+  padding: 1.5rem;
+}
+footer .logo {
+  margin-bottom: 1rem;
+}
+.footer-link-info {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  margin-left: 20px;
+  margin-bottom: 2rem;
+}
+.footer-icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
