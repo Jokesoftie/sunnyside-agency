@@ -22,7 +22,6 @@
 
 body {
   font-family: "Poppins";
-  color: rgb(0, 60, 255);
 }
 .hero-section {
   background-image: url(images/desktop/image-header.jpg);
@@ -82,7 +81,6 @@ header {
 .transform-text,
 .stand-out-text {
   padding: 7rem 10rem;
-  
 }
 .transform-text h2,
 .stand-out-text h2 {
@@ -96,7 +94,7 @@ header {
   margin-bottom: 2rem;
 }
 span {
-  color: black;
+  color: var(--Dark--blue);
   text-transform: uppercase;
 }
 .stand-out {
@@ -168,7 +166,6 @@ span {
 }
 .gallery {
   display: flex;
-  /* height: 500px; */
   overflow: hidden;
 }
 .gallery-image-container {
@@ -183,10 +180,8 @@ span {
 footer {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   background-color: var(--Dark--moderatecyan);
-  /* border: 2px solid; */
   padding: 1.5rem;
 }
 footer .logo {
@@ -203,4 +198,80 @@ footer .logo {
   display: flex;
   justify-content: space-between;
   gap: 1.5rem;
+}
+.mobile-toggle {
+  display: none;
+}
+
+/* mobile-tab-style */
+@media screen and (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+  .mobile-toggle {
+    display: block;
+  }
+  .hero-section {
+    background-image: url(./images/mobile/image-header.jpg);
+    background-size: cover;
+  }
+  .hero-description {
+    padding: 2rem 1.5rem;
+    overflow: hidden;
+  }
+  .hero-description h1 {
+    font-size: 4rem;
+    text-align: center;
+    margin: 4rem 0;
+    letter-spacing: 10px;
+  }
+
+  .transform {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .transform-image,
+  .transform-text,
+  .stand-out-image,
+  .stand-out-text {
+    width: 100%;
+  }
+  .stand-out {
+    flex-direction: column;
+  }
+  .design {
+    flex-direction: column;
+  }
+}
+/* mobile-large-screen */
+@media screen and (max-width: 426px) {
+  .hero-description h1 {
+    letter-spacing: normal;
+    font-size: 3rem;
+    margin: 3rem 0;
+    padding: 2rem;
+  }
+  .transform-image,
+  .stand-out-image {
+    height: auto;
+  }
+  .transform-text,
+  .stand-out-text,
+  .graphic,
+  .photography {
+    padding: 2rem;
+  }
+  .stand-out-text, .transform-text{
+    text-align: center;
+  }
+  .graphic {
+    background-image: url(./images/mobile/image-graphic-design.jpg);
+  }
+  .photography {
+    background-image: url(./images/mobile/image-photography.jpg);
+  }
+  .graphic,
+  .photography {
+    height: 700px;
+  }
 }
